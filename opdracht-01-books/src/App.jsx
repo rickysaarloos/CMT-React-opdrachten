@@ -8,9 +8,10 @@ function App() {
   return (
     <>
       <Header />
+        <Layout>
       <h1>Opdracht 1 - Books</h1>
       <BookList />
-      
+      </Layout>
     </>
   )
 }

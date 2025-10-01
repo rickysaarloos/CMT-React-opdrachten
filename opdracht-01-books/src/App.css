@@ -41,21 +41,19 @@
   color: #888;
 }
 
-.booklist {
-  display: inline-flex;
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 2rem;
+  padding: 1rem;
+  list-style: none;
 }
 
 .book {
-  
+  border: 1px solid #ccc;
+  border-radius: 8px;
   padding: 1rem;
-  border-radius: 12px;
-  text-align: center;
-  width: 200px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: left;
 }
 
 .book img {
