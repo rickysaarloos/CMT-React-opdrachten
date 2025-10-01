@@ -1,9 +1,10 @@
-const Book = ({ title, author, year }) => {
+const Book = ({ title, author, img }) => {
   return (
     <div className="book"> 
-        <img src="\CMT-React-opdrachten\opdracht-01-books\public\images" alt="" />
+        <img src={img} alt={title} />
         <h2>{title}</h2>
-        <p>by {author} ({year})</p>
+        <p>by {author}</p>
     </div>
   );
 }
+export default Book

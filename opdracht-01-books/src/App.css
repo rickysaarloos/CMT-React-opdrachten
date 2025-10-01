@@ -40,3 +40,33 @@
 .read-the-docs {
   color: #888;
 }
+
+.booklist {
+  display: inline-flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.book {
+  
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.book img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.book h2 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+
+
