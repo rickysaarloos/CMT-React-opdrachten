@@ -5,7 +5,7 @@ import './Header.css';
 function Header() {
   return (
     <header className="header">
-      <h1>Books</h1>
+      <h1>Alle boeken</h1>
     </header>
   )
 }
