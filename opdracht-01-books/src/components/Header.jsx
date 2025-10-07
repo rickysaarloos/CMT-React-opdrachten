@@ -5,13 +5,7 @@ import './Header.css';
 function Header() {
   return (
     <header className="header">
-      <nav className="navbar">
-        <ul>
-          <li>Home</li>
-          <li>Contact</li>
-          <li>About Us</li>
-        </ul>
-      </nav>
+      <h1>Books</h1>
     </header>
   )
 }
