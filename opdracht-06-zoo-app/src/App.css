@@ -40,3 +40,129 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.homepage {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.homepage h1 {
+  color: #7b4a0b;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px #fcecc1;
+}
+
+/* 🐯 Grid met kaarten */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem 3rem;
+}
+
+/* 🐘 Individuele kaart */
+.card {
+  background-color: #fffdf5;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-bottom: 2px solid #e0c48c;
+}
+
+.card h2 {
+  margin: 0.8rem 1rem 0.3rem;
+  font-size: 1.1rem;
+  color: #5b3810;
+  font-weight: bold;
+}
+
+.card p {
+  margin: 0 1rem 1rem;
+  font-size: 0.9rem;
+  color: #6b4b18;
+}
+
+/* 🦒 Detailpagina */
+.detail-page {
+  background-color: #fffdf5;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  max-width: 500px;
+  margin: 3rem auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.detail-page img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* Detail tekst */
+.detail-page h1 {
+  font-size: 1.8rem;
+  color: #7b4a0b;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.detail-page p {
+  color: #4b2e05;
+  font-size: 1rem;
+  margin: 0.4rem 0;
+}
+
+.detail-page strong {
+  color: #7b4a0b;
+}
+
+/* Terug-knop */
+.detail-page a {
+  display: inline-block;
+  margin-top: 1.2rem;
+  background-color: #a06224;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.detail-page a:hover {
+  background-color: #804b1c;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .card-container {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+
+  .detail-page {
+    margin: 1.5rem;
+    padding: 1.5rem;
+  }
+}
