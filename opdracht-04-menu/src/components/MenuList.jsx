@@ -1,22 +1,20 @@
 import { useState } from "react";
 import menu from '../data.js';
-
+import Menu from './menu.jsx';  
 
 function MenuList() {
     const [items, setItems] = useState(menu);
+
     return (
         <div className="menu-list">
-            {items.map((item) => (  
-                <div key={item.id} className="menu-item">
-                    <img src={item.img} alt={item.title} />
-                    <h2>{item.title}</h2>
-                    <p className="price">€{item.price}</p>
-                    <p className="desc">{item.desc}</p>
-                </div>
+            {items.map((item) => (
+                <Menu key={item.id} item={item} />
             ))}
         </div>
     );
 }
+
+
  
 
 export default MenuList;
