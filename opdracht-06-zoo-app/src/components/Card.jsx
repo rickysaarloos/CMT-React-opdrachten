@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 function Card({ name, img, description, id }) {
     const navigate = useNavigate();
     
-    const handleCliclk = () => {
+    const handleClick = () => {
         navigate(`/animal/${id}`);
     }
     
