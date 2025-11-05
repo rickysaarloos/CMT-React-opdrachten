@@ -1,12 +1,17 @@
-import './App.css'
+import { useState } from "react";
+import CreateTodo from "../components/CreateTodo";
+import TodoList from "../components/TodoList";
 
 function App() {
 
+  const [todos, setTodos] = useState([]);
+
   return (
     <>
-      <h1>Opdracht 8 - To Do</h1>
+      <CreateTodo todos={todos} setTodos={setTodos} />
+      <TodoList todos={todos} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
