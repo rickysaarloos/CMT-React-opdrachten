@@ -37,7 +37,7 @@ function App() {
       </div>
 
       <div className="text-left w-80 max-w-md mx-auto">
-        <p className="text-gray-600 dark:text-gray-300">
+       <p className="text-gray-600 dark:text-gray-300">
           Workcation helps you find work-friendly rentals in beautiful
           locations so you can enjoy some nice weather even when you’re not
           on vacation.
