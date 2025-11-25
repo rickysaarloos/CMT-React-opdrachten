@@ -8,11 +8,16 @@ function App() {
   const [movies, setMovies] = useState([]);
 
   const addMovie = (newMovie) => {
-    if (!movies.includes(newMovie)) {
+    const movieExists = movies.some(
+      (movie) => movie.toLowerCase() === newMovie.toLowerCase()
+    );
+
+    if (movieExists) {
       alert('This movie is already in your favorites!');
       return;
     }
-    setMovie([...movies, newMovie]);
+
+    setMovies([...movies, newMovie]);
   };
 
   const deleteMovie = (movieToDelete) => {

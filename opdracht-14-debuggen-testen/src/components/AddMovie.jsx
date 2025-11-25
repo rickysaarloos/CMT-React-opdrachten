@@ -13,11 +13,9 @@ const AddMovie = ({ onAdd }) => {
       return;
     }
 
-    onAdd(movie); 
- setMovie(''); 
+    onAdd(trimmedMovie); 
+    setMovie('');       
   };
-
- 
 
   return (
     <form onSubmit={handleSubmit}>
