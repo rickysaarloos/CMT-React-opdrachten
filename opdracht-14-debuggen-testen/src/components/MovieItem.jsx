@@ -1,10 +1,14 @@
-const MovieItem = ({ movie, onDelete }) => {
+
+  const MovieItem = ({ movie, onDelete }) => {
   return (
-    <li>
+    <li className="movie-item">
       {movie}
-      <button onClick={() => onDelete(movie)}>Remove</button>
+      <button onClick={() => onDelete(movie)}>
+        Remove
+      </button>
     </li>
   );
 };
+
 
 export default MovieItem;

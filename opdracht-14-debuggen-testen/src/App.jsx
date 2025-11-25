@@ -1,7 +1,7 @@
 import Header from './components/Header';
 import AddMovie from './components/AddMovie';
 import MovieList from './components/MovieList';
-
+import { useState } from 'react';
 import './App.css';
 
 function App() {
